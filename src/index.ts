@@ -40,7 +40,7 @@ try {
   console.error(error);
 }
 
-client.on("interactionCreate", async (interaction) => {
+client.on("interactionCreate", (interaction) => {
   if (!interaction.isCommand()) return;
 
   // const songLink = interaction.options.getString("input");
